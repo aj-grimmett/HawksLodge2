@@ -1,0 +1,330 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
+  background-color: #d5cea6;
+  /* Old browsers */
+  background-color: -moz-linear-gradient(top, #d5cea6 30%, #c9c190 20%, #867f54 100%);
+  /* FF3.6-15 */
+  background-color: -webkit-linear-gradient(top, #d5cea6 48%, #c9c190 30%, #c0af4f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background-color: linear-gradient(to bottom, #d5cea6 50%, #c9c190 25%, #beaf56 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=0);
+  /* IE6-9 */
+}
+body #header {
+  margin: 5%,0,5%,0;
+  padding: 5%,0,5%,0;
+  width: auto;
+  height: auto;
+}
+body #header .header-img-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3%,0,3%,0%;
+  width: 100%;
+  height: 100%;
+  opacity: 99%;
+}
+body #header .header-img-background h1 {
+  color: #000000;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 3.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 2.3%;
+  padding-bottom: 1%;
+  opacity: 90%;
+}
+body #header .header-img-background .nav-wrapper {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 100%;
+  padding-bottom: 1.1%;
+  padding-top: 4%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 24px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+body #header .header-img-background .nav-wrapper .nav-link-wrapper a {
+  color: powderblue;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+body #header .header-img-background .nav-wrapper .nav-link-wrapper:hover {
+  border-bottom: 2px solid crimson;
+}
+body #header .header-img-background .nav-wrapper .nav-link-wrapper a:hover {
+  color: red;
+}
+body #header .header-img-background .nav-wrapper .nav-wrapper-active-link a {
+  color: #f30635;
+}
+body .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  line-height: 1.5em;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+body .content h2 {
+  align-items: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 4%;
+}
+body .content .lat {
+  line-height: 1.8rem;
+  font-weight: 700;
+  font-style: oblique;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+body .content .dirc {
+  align-items: center;
+  margin-right: 8%;
+  margin-left: 8%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 4%;
+  line-height: 1.7rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+body .content .dirc #map a {
+  color: #23b62a;
+  font-size: 1.6rem;
+  padding-top: 5%;
+  margin-top: 8%;
+  line-height: 2.2rem;
+}
+body .content .dirc #map a:hover {
+  color: #f30635;
+}
+body .content .dirc #text {
+  color: azure;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+body .contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7em;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background-color: whitesmoke;
+}
+body .contain .middle {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 4%;
+  font-weight: 400;
+}
+body .contain #motto {
+  padding: 3%;
+  margin: 3%;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+body footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-top: 1%;
+  width: 100%;
+}
+body footer .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body footer .info #left {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  font-style: italic;
+  margin-right: 8%;
+  text-align: left;
+  width: 40%;
+}
+body footer .info #left p {
+  text-align: left;
+}
+body footer .info #right {
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-left: 6%;
+}
+body footer .info #right ul {
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  width: 80%;
+}
+body footer .info #right ul li {
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  list-style: none;
+  color: black;
+  margin-top: 1%;
+}
+body footer .info #right ul li li a {
+  color: black;
+}
+body footer .info #right ul li li a li a:hover {
+  color: red;
+}
+body footer #fnav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1%;
+  margin-top: 1%;
+  width: 100%;
+}
+body footer #fnav .nav-wrapper {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 100%;
+  padding-bottom: 1.1%;
+  padding-top: 4%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 24px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+body footer #fnav .nav-wrapper .nav-link-wrapper a {
+  color: powderblue;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+body footer #fnav .nav-wrapper .nav-link-wrapper:hover {
+  border-bottom: 2px solid crimson;
+}
+body footer #fnav .nav-wrapper .nav-link-wrapper a:hover {
+  color: red;
+}
+body footer #fnav .nav-wrapper .nav-wrapper-active-link a {
+  color: #f30635;
+}
