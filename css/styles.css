@@ -284,6 +284,7 @@ body footer .info #right ul li {
   margin-top: 2%;
   list-style: none;
   padding-top: 3%;
+  padding-bottom: 1%;
   padding-bottom: 1.1%;
   font-size: 1rem;
   font-weight: 500;
@@ -300,6 +301,10 @@ body footer .info #right ul li a {
 }
 body footer .info #right ul li a:hover {
   color: red;
+}
+body footer .info #right ul #fb a {
+  color: royalblue;
+  font-size: 1.3rem;
 }
 body footer #fnav {
   display: flex;
