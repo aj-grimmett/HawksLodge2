@@ -115,7 +115,7 @@ body{
             h2{
                 display: flex;
                 justify-content: center;
-                width: 70%;
+                width: 83%;
             }
         }
             
@@ -336,6 +336,8 @@ body{
         align-items: center;
         font-size: 1.3rem;
         line-height: 1.8rem;
+        background-color: floralwhite;
+        margin-top: 3px;
         h2{
             font-weight: 600;
         }
@@ -348,7 +350,7 @@ body{
                font-size: 1.3rem;
                font-weight: 500;
                line-height: 1.6rem;
-                 a  {
+                a  {
                  justify-content: space-evenly;
                  align-items:flex-end;  
                  flex-wrap: wrap;
@@ -359,7 +361,7 @@ body{
                  border-radius: 53%;
             
                 }
-                 a:hover{
+                a:hover{
                     color: red;
                 }
                 
@@ -375,24 +377,24 @@ body{
         }
     }
     .help{
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         font-size: 1.2rem;
         font-weight: 400;
-        margin: 2%;
-        margin-left: 6%;
-        width: 70%;
+        width: 100%;
         line-height: 1.8rem;
+        background-color: floralwhite;
         p{
-            margin-left: 2%;
+            width: 90%;
         }
 
         h2{
             margin-bottom: 1%;
-            align-items: center;
+            align-items: flex-start;
             font-size: 1.5rem;
-            margin-left: 4%;
             font-weight: 700;
+            width: 40%;
         }
        
         
@@ -400,6 +402,7 @@ body{
             font-size: 1.4;
             font-weight: 600;
             margin: 2%;
+            width: 70%;
         }
         
     }
@@ -410,8 +413,9 @@ body{
         align-items: center;
         font-size: 1.2rem;
         line-height: 1.6rem;
-        padding-top: 1%;
-        margin: 2%;
+        padding: 1%;
+        margin-top: 3px;
+        background-color: honeydew;
         #cabin-1{
             width: 50%;
             margin-right: 3%;
@@ -421,16 +425,219 @@ body{
             margin-bottom: 13%;
         }
 
+        
+    }
+    .policies{
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: honeydew;
+        .extra{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 51%;
+            h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bolder;
+            margin-bottom: 1%;
+            }
+            ul{
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: green;
+            }
+        }
+        .supplies{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 47%;
+            margin-left: 2%;
+            line-height: 2.2rem;
+            font-size: 1.5rem;
+            line-break: 1.2rem;
+            font-weight: bold;
+            
+        }
+        
     }
 
+    .rates{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        line-height: 1.8rem;
+        background-color: honeydew;
     
+        .price{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            width: 55%;
+            margin: 2%;
+            h2{
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 1%;
+            }
 
-   
+        }
+        .shed{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            line-height: 1.9rem;
+            width: 45%;
+            margin: 2%;
+            margin-bottom: 9%;
+        }
 
+    }
 
+    .improv{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 1%;
+        background-color: honeydew;
+        p{
+            width: 30%;
+            font-size: 0.7rem;
+            font-weight: bold;
+            line-height: 1.4rem;
+        }
+    }    
 
+   //contact
+   .title{
+       display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding-top: 4%;
+      width: 100%;
+      h2{
+          width: 20%;
+      }
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 2.3rem;
+        padding-top: 2%;
+        width: 100%;
+        border-bottom: dashed 0.3rem;
+        .text{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            width: 40%;
+            padding-top: 3%;
+            padding-left: 5%;
+            
+            ul{
+                justify-content: space-around;
+                align-items: flex-end;  
+                flex-wrap: wrap;
+                margin-top: 2%;
+                li{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items:flex-end;  
+                    flex-wrap: wrap;
+                    margin-top: 2%;
+                    list-style: none;
+                    padding-bottom: 1%;
+                    padding-bottom: 1.1%;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    border-bottom: 2px solid transparent;
+                    transition: border-bottom 0.2s;
+                    a  {
+                        justify-content: space-evenly;
+                        align-items:flex-end;  
+                        flex-wrap: wrap;
+                        margin-top: 3%;
+                        text-decoration: none;
+                        color: black;
+                    
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                        
+                }
+                    
+            }
+        
+            #update{
+                span{
+                    margin: 2%;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    line-height: 1.6rem;
+                     a  {
+                      justify-content: space-evenly;
+                      align-items:flex-end;  
+                      flex-wrap: wrap;
+                      margin: 3%;
+                      text-decoration: none;
+                      color: royalblue;
+                      background-color: azure;
+                      border-radius: 53%;
+                 
+                    }
+                     a:hover{
+                        color: red;
+                    }
+                     
+                }
+            }
+            #google{
+                #map a{color: rgb(35, 182, 42);
+                font-size: 1.6rem;
+                padding-top: 5%;
+                margin-top: 8%;
+                line-height: 2.2rem;
+                }
+                #map a:hover{
+                    color: rgb(243, 6, 53);
+                }
+                #text{
+                    color: azure;   
+                    font-weight: 800;
+                    font-size: .8rem;
+                }
+            } 
+        }
+        .email{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            line-height: 2.8rem;
+            margin-bottom: 15%;
+            width: 50%;
 
-
-
+        }
+    }
+    
 
 }
