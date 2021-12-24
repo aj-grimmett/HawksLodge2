@@ -21,11 +21,7 @@ time, mark, audio, video {
 }
 body{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
-  background-color: rgb(213,206,166); /* Old browsers */
-   background-color: -moz-linear-gradient(top,  rgb(213,206,166) 30%, rgb(201,193,144) 20%, rgb(134, 127, 84,0.8) 100%); /* FF3.6-15 */
-  background-color: -webkit-linear-gradient(top,  rgb(213,206,166) 48%,rgb(201,193,144) 30%,rgb(192, 175, 79,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-  background-color: linear-gradient(to bottom,  rgb(213,206,166) 50%,rgb(201,193,144) 25%,rgb(190, 175, 86,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+  background-color: #FFEBCD;
    
   #first:after {
         content: "";
@@ -38,7 +34,7 @@ body{
         position: absolute;
         z-index: -1;   
     } 
-    #header{
+    header{
     margin: 5%,0,5%,0;
     padding: 5%,0,5%,0;
     width: auto;
@@ -62,18 +58,18 @@ body{
             padding-bottom: 1%;
             opacity: 90%;
             }
-            .nav-wrapper{
-            font-size: 1.2rem;
-            font-weight: 950;
-            width: 100%;
-            padding-bottom: 1.1%;
-            padding-top: 4%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 24px;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.5s;
+            nav{
+             font-size: 1.2rem;
+             font-weight: 950;
+             width: 100%;
+             padding-bottom: 1.1%;
+             padding-top: 4%;
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;
+             height: 24px;
+             border-bottom: 2px solid transparent;
+             transition: border-bottom 0.5s;
                                 
                 .nav-link-wrapper a {
                 color: lightcyan;
@@ -92,9 +88,26 @@ body{
                 .nav-wrapper-active-link a{
                 color: rgb(243, 6, 53);
                 }   
+                .hamburger{
+                    display: none;
+                    cursor: pointer;
+                    .bar{
+                        display: block;
+                        width: 26px;
+                        height: 4px;
+                        margin: 5px auto;
+                        transition: all 0.3s ease-in-out;
+                        background-color: black;
+                        
+                    }
+                    @media screen {
+                        
+                    }
+                }
             }   
         }               
     }      
+    
     .content{
         box-sizing: border-box;
         display: flex;
@@ -302,11 +315,14 @@ body{
     }
        
     //about
+    #bgi{
+        background-image: url('/images/mountain-1.jpg');
+    }
     .contain{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5px;
+        padding: 1%;
         line-height: 1.7em;
         font-size: 1.3rem;
         font-family: Arial, Helvetica, sans-serif;
@@ -337,7 +353,7 @@ body{
         font-size: 1.3rem;
         line-height: 1.8rem;
         background-color: floralwhite;
-        margin-top: 3px;
+        padding: 1%;
         h2{
             font-weight: 600;
         }
@@ -413,8 +429,8 @@ body{
         align-items: center;
         font-size: 1.2rem;
         line-height: 1.6rem;
-        padding: 1%;
-        margin-top: 3px;
+        padding: 2%;
+        
         background-color: honeydew;
         #cabin-1{
             width: 50%;

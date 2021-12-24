@@ -89,16 +89,7 @@ video {
 }
 body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
-  background-color: #d5cea6;
-  /* Old browsers */
-  background-color: -moz-linear-gradient(top, #d5cea6 30%, #c9c190 20%, #867f54 100%);
-  /* FF3.6-15 */
-  background-color: -webkit-linear-gradient(top, #d5cea6 48%, #c9c190 30%, #c0af4f 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background-color: linear-gradient(to bottom, #d5cea6 50%, #c9c190 25%, #beaf56 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=0);
-  /* IE6-9 */
+  background-color: #FFEBCD;
 }
 body #first:after {
   content: "";
@@ -111,13 +102,13 @@ body #first:after {
   position: absolute;
   z-index: -1;
 }
-body #header {
+body header {
   margin: 5%,0,5%,0;
   padding: 5%,0,5%,0;
   width: auto;
   height: auto;
 }
-body #header .header-img-background {
+body header .header-img-background {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +117,7 @@ body #header .header-img-background {
   height: 100%;
   opacity: 99%;
 }
-body #header .header-img-background h1 {
+body header .header-img-background h1 {
   color: #000000;
   text-align: center;
   font-weight: bolder;
@@ -136,7 +127,7 @@ body #header .header-img-background h1 {
   padding-bottom: 1%;
   opacity: 90%;
 }
-body #header .header-img-background .nav-wrapper {
+body header .header-img-background nav {
   font-size: 1.2rem;
   font-weight: 950;
   width: 100%;
@@ -149,19 +140,31 @@ body #header .header-img-background .nav-wrapper {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper a {
+body header .header-img-background nav .nav-link-wrapper a {
   color: lightcyan;
   text-decoration: none;
   transition: color 0.5s;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper:hover {
+body header .header-img-background nav .nav-link-wrapper:hover {
   border-bottom: 2px solid crimson;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper a:hover {
+body header .header-img-background nav .nav-link-wrapper a:hover {
   color: red;
 }
-body #header .header-img-background .nav-wrapper .nav-wrapper-active-link a {
+body header .header-img-background nav .nav-wrapper-active-link a {
   color: #f30635;
+}
+body header .header-img-background nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+body header .header-img-background nav .hamburger .bar {
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 body .content {
   box-sizing: border-box;
@@ -347,11 +350,14 @@ body footer #fnav .nav-wrapper .nav-link-wrapper a:hover {
 body footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: #f30635;
 }
+body #bgi {
+  background-image: url('/images/mountain-1.jpg');
+}
 body .contain {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  padding: 1%;
   line-height: 1.7em;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -379,7 +385,7 @@ body .review {
   font-size: 1.3rem;
   line-height: 1.8rem;
   background-color: floralwhite;
-  margin-top: 3px;
+  padding: 1%;
 }
 body .review h2 {
   font-weight: 600;
@@ -444,8 +450,7 @@ body .cabins {
   align-items: center;
   font-size: 1.2rem;
   line-height: 1.6rem;
-  padding: 1%;
-  margin-top: 3px;
+  padding: 2%;
   background-color: honeydew;
 }
 body .cabins #cabin-1 {
