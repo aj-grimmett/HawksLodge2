@@ -89,16 +89,7 @@ video {
 }
 body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
-  background-color: #d5cea6;
-  /* Old browsers */
-  background-color: -moz-linear-gradient(top, #d5cea6 30%, #c9c190 20%, #867f54 100%);
-  /* FF3.6-15 */
-  background-color: -webkit-linear-gradient(top, #d5cea6 48%, #c9c190 30%, #c0af4f 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background-color: linear-gradient(to bottom, #d5cea6 50%, #c9c190 25%, #beaf56 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=0);
-  /* IE6-9 */
+  background-color: #FFEBCD;
 }
 body #first:after {
   content: "";
@@ -111,13 +102,13 @@ body #first:after {
   position: absolute;
   z-index: -1;
 }
-body #header {
+body header {
   margin: 5%,0,5%,0;
   padding: 5%,0,5%,0;
   width: auto;
   height: auto;
 }
-body #header .header-img-background {
+body header .header-img-background {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +117,7 @@ body #header .header-img-background {
   height: 100%;
   opacity: 99%;
 }
-body #header .header-img-background h1 {
+body header .header-img-background h1 {
   color: #000000;
   text-align: center;
   font-weight: bolder;
@@ -136,7 +127,7 @@ body #header .header-img-background h1 {
   padding-bottom: 1%;
   opacity: 90%;
 }
-body #header .header-img-background .nav-wrapper {
+body header .header-img-background nav {
   font-size: 1.2rem;
   font-weight: 950;
   width: 100%;
@@ -149,19 +140,31 @@ body #header .header-img-background .nav-wrapper {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.5s;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper a {
+body header .header-img-background nav .nav-link-wrapper a {
   color: lightcyan;
   text-decoration: none;
   transition: color 0.5s;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper:hover {
+body header .header-img-background nav .nav-link-wrapper:hover {
   border-bottom: 2px solid crimson;
 }
-body #header .header-img-background .nav-wrapper .nav-link-wrapper a:hover {
+body header .header-img-background nav .nav-link-wrapper a:hover {
   color: red;
 }
-body #header .header-img-background .nav-wrapper .nav-wrapper-active-link a {
+body header .header-img-background nav .nav-wrapper-active-link a {
   color: #f30635;
+}
+body header .header-img-background nav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+body header .header-img-background nav .hamburger .bar {
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
 }
 body .content {
   box-sizing: border-box;
@@ -184,7 +187,7 @@ body .content .info-1 {
 body .content .info-1 h2 {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 83%;
 }
 body .content h2 {
   display: flex;
@@ -347,11 +350,14 @@ body footer #fnav .nav-wrapper .nav-link-wrapper a:hover {
 body footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: #f30635;
 }
+body #bgi {
+  background-image: url('/images/mountain-1.jpg');
+}
 body .contain {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  padding: 1%;
   line-height: 1.7em;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -378,6 +384,8 @@ body .review {
   align-items: center;
   font-size: 1.3rem;
   line-height: 1.8rem;
+  background-color: floralwhite;
+  padding: 1%;
 }
 body .review h2 {
   font-weight: 600;
@@ -411,29 +419,30 @@ body .review .description {
   margin-bottom: 11%;
 }
 body .help {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-size: 1.2rem;
   font-weight: 400;
-  margin: 2%;
-  margin-left: 6%;
-  width: 70%;
+  width: 100%;
   line-height: 1.8rem;
+  background-color: floralwhite;
 }
 body .help p {
-  margin-left: 2%;
+  width: 90%;
 }
 body .help h2 {
   margin-bottom: 1%;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.5rem;
-  margin-left: 4%;
   font-weight: 700;
+  width: 40%;
 }
 body .help h3 {
   font-size: 1.4;
   font-weight: 600;
   margin: 2%;
+  width: 70%;
 }
 body .cabins {
   display: flex;
@@ -441,8 +450,8 @@ body .cabins {
   align-items: center;
   font-size: 1.2rem;
   line-height: 1.6rem;
-  padding-top: 1%;
-  margin: 2%;
+  padding: 2%;
+  background-color: honeydew;
 }
 body .cabins #cabin-1 {
   width: 50%;
@@ -451,4 +460,195 @@ body .cabins #cabin-1 {
 body .cabins #cabin-2 {
   width: 50%;
   margin-bottom: 13%;
+}
+body .policies {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: honeydew;
+}
+body .policies .extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 51%;
+}
+body .policies .extra h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 1%;
+}
+body .policies .extra ul {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: green;
+}
+body .policies .supplies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  margin-left: 2%;
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  line-break: 1.2rem;
+  font-weight: bold;
+}
+body .rates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 1.8rem;
+  background-color: honeydew;
+}
+body .rates .price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: 55%;
+  margin: 2%;
+}
+body .rates .price h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+body .rates .shed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 1.9rem;
+  width: 45%;
+  margin: 2%;
+  margin-bottom: 9%;
+}
+body .improv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  background-color: honeydew;
+}
+body .improv p {
+  width: 30%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+}
+body .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 4%;
+  width: 100%;
+}
+body .title h2 {
+  width: 20%;
+}
+body .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.3rem;
+  padding-top: 2%;
+  width: 100%;
+  border-bottom: dashed 0.3rem;
+}
+body .contact .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 40%;
+  padding-top: 3%;
+  padding-left: 5%;
+}
+body .contact .text ul {
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+body .contact .text ul li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  list-style: none;
+  padding-bottom: 1%;
+  padding-bottom: 1.1%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+body .contact .text ul li a {
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  text-decoration: none;
+  color: black;
+}
+body .contact .text ul li a:hover {
+  color: red;
+}
+body .contact .text #update span {
+  margin: 2%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+body .contact .text #update span a {
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin: 3%;
+  text-decoration: none;
+  color: royalblue;
+  background-color: azure;
+  border-radius: 53%;
+}
+body .contact .text #update span a:hover {
+  color: red;
+}
+body .contact .text #google #map a {
+  color: #23b62a;
+  font-size: 1.6rem;
+  padding-top: 5%;
+  margin-top: 8%;
+  line-height: 2.2rem;
+}
+body .contact .text #google #map a:hover {
+  color: #f30635;
+}
+body .contact .text #google #text {
+  color: azure;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+body .contact .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  margin-bottom: 15%;
+  width: 50%;
 }
