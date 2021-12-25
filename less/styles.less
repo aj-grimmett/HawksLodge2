@@ -1,3 +1,5 @@
+@import "variables";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,6 +72,36 @@ body{
              height: 24px;
              border-bottom: 2px solid transparent;
              transition: border-bottom 0.5s;
+             .nav-menu{
+                font-size: 1.2rem;
+                font-weight: 950;
+                width: 100%;
+                padding-bottom: 1%;
+                padding-top: 4%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 24px;
+                border-bottom: 2px solid transparent;
+                transition: border-bottom 0.5s;
+                 
+
+             @media @phone {
+                 position: fixed;
+                 left: -100%;
+                 top: 70px;
+                 gap: 0;
+                 flex-direction: column;
+                 background-color: black;
+                 width: 100%;
+                 text-align: center;
+                 transition: 0.3s;
+                 margin: 16px 0;
+                 .active{
+                     left: 0;
+                 }
+                } 
+             }
                                 
                 .nav-link-wrapper a {
                 color: lightcyan;
@@ -89,18 +121,46 @@ body{
                 color: rgb(243, 6, 53);
                 }   
                 .hamburger{
+                    padding: 0 2% 3% 0;
                     display: none;
                     cursor: pointer;
+                    text-align: right;
+                    @media @phone{
+                        display: block;
+                        justify-content: right;
+                        align-items: flex-end;
+                        .active .bar:nth-child(2){
+                            opacity: 0;
+                        }
+                        .active .bar:nth-child(1){
+                           transform: translateY(8px) rotate(45deg);
+                        }
+                        .active .bar:nth-child(3){
+                            transform: translateY(-8px) rotate(-45deg);
+                         }
+                    }     
+                    @media @tablet {
+                        display: block;
+                        align-items: flex-end;
+                        .active .bar:nth-child(2){
+                            opacity: 0;
+                        }
+                        .active .bar:nth-child(1){
+                           transform: translateY(8px) rotate(45deg);
+                        }
+                        .active .bar:nth-child(3){
+                            transform: translateY(-8px) rotate(-45deg);
+                         }
+                        
+                    }                              
                     .bar{
                         display: block;
                         width: 26px;
                         height: 4px;
                         margin: 5px auto;
                         transition: all 0.3s ease-in-out;
-                        background-color: black;
-                        
-                    }
-                    @media screen {
+                        background-color: whitesmoke;
+                        opacity: 80%;
                         
                     }
                 }
