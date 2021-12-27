@@ -152,8 +152,6 @@ header nav {
     text-align: center;
     transition: 0.3s;
   }
-
-  
   .nav-menu.active{
     left: 0;
   }
@@ -357,6 +355,12 @@ footer .info #left {
 footer .info #left p {
   text-align: left;
 }
+@media (max-width:600px) {
+  footer .info #left p {
+    padding-left: 5%;
+  }
+  
+}
 footer .info #right {
   flex-wrap: wrap;
   align-items: flex-end;
@@ -422,6 +426,13 @@ footer #fnav {
     display: none;
   }
 }
+
+@media (max-width: 780px) {
+  footer #fnav{
+    display: none;
+  }
+  
+}
 footer #fnav .nav-wrapper {
   font-size: 1.2rem;
   font-weight: 800;
@@ -486,12 +497,28 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   background-color: floralwhite;
   padding: 1%;
 }
+@media (max-width:600px) {
+  .review{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+}
 .review h2 {
   font-weight: 600;
 }
 .review .Face {
   width: 40%;
   margin: 3%;
+}
+@media (max-width:600px) {
+  .review .Face{
+    width: 90%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  
 }
 .review .Face span {
   margin: 2%;
@@ -517,6 +544,20 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin-left: 2%;
   margin-bottom: 11%;
 }
+@media (max-width:600px) {
+  .review .description{
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+}
+@media (min-width:601px) and (max-width:780px) {
+  .review .description{
+    margin-bottom: 50%;
+  }
+   
+}
 .help {
   display: flex;
   flex-wrap: wrap;
@@ -526,6 +567,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 100%;
   line-height: 1.8rem;
   background-color: floralwhite;
+}
+@media (max-width:600px) {
+  .help{
+    width: 100%;
+    text-align: center;
+    
+  }
+  
 }
 .help p {
   width: 90%;
@@ -552,13 +601,39 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   padding: 2%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .cabins{
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  
+}
 .cabins #cabin-1 {
   width: 50%;
   margin-right: 3%;
 }
+@media (max-width:600px) {
+  .cabins #cabin-1{
+    width: 90%;
+  }
+   
+}
 .cabins #cabin-2 {
   width: 50%;
   margin-bottom: 13%;
+}
+@media (max-width:600px) {
+  .cabins #cabin-2{
+    width: 80%;
+    margin-bottom: -20px;
+  }
+   
+}
+@media (min-width:601px) and (max-width:780px) {
+  .cabins #cabin-2 p{
+    margin-bottom: 50%;
+  }
+   
 }
 .policies {
   padding: 2%;
@@ -568,11 +643,27 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 100%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .policies{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -20px;
+  }
+ 
+}
 .policies .extra {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 51%;
+}
+@media (max-width:600px) {
+  .policies .extra{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
 }
 .policies .extra h2 {
   display: flex;
@@ -581,6 +672,12 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 1.8rem;
   font-weight: bolder;
   margin-bottom: 1%;
+}
+@media (max-width:600px) {
+  .policies .extra h2{
+    padding: 5% 0 3% 0;
+  }
+ 
 }
 .policies .extra ul {
   font-size: 1.1rem;
@@ -598,6 +695,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   line-break: 1.2rem;
   font-weight: bold;
 }
+@media (max-width:600px) {
+  .policies .supplies{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
+}
 .rates {
   display: flex;
   justify-content: center;
@@ -605,6 +710,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 100%;
   line-height: 1.8rem;
   background-color: honeydew;
+}
+@media (max-width:600px) {
+  .rates{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 100%;
+  }
+ 
 }
 .rates .price {
   display: flex;
@@ -614,6 +727,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-weight: 700;
   width: 55%;
   margin: 2%;
+}
+@media (max-width:600px) {
+  .rates .price{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
 }
 .rates .price h2 {
   font-size: 1.5rem;
@@ -631,6 +752,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin: 2%;
   margin-bottom: 9%;
 }
+@media (max-width:600px) {
+  .rates .shed{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 90%;
+  }
+ 
+}
 .improv {
   display: flex;
   justify-content: flex-start;
@@ -639,11 +768,28 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   padding: 1%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .improv{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+ 
+}
 .improv p {
   width: 30%;
   font-size: 0.7rem;
   font-weight: bold;
   line-height: 1.4rem;
+}
+@media (max-width:600px) {
+  .improv p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+ 
 }
 .title {
   display: flex;
