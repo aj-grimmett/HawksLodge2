@@ -15,7 +15,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
  margin: 0;
  padding: 0;
- border: 0;
  box-sizing: border-box;
  font-size: 62.5%;
  font: inherit;
@@ -23,23 +22,9 @@ time, mark, audio, video {
 }
 body{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
-  background-color: #FFEBCD;
-} 
-#first:after {
-    content: "";
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-} 
+ background-color: #FFEBCD;
+}
 header{
-margin: 5%,0,5%,0;
-padding: 5%,0,5%,0;
-width: auto;
-height: auto;
     
             
     h1{
@@ -53,15 +38,13 @@ height: auto;
     opacity: 90%;
     }
     nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         font-size: 1.2rem;
         font-weight: 950;
         width: 100%;
         padding-bottom: 1.1%;
-        padding-top: 4%;
-        height: 24px;
         border-bottom: 2px solid transparent;
         transition: border-bottom 0.5s;
         @media @phone {
@@ -79,9 +62,6 @@ height: auto;
             font-size: 1.2rem;
             font-weight: 950;
             width: 100%;
-            padding-bottom: 4%;
-            padding-top: 4%;
-            height: 24px;
             border-bottom: 2px solid transparent;
             transition: border-bottom 0.5s;
             color: lightcyan;
@@ -98,6 +78,7 @@ height: auto;
                 justify-content: center;
                 align-items: center;
                 background-color: #262626;
+                padding-bottom: 5%;
                 width: 100%;
                 text-align: center;
                 transition: 0.3s;
@@ -120,7 +101,8 @@ height: auto;
                     }
                 
             }
-            .nav-link-wrapper{                
+            li{    
+                list-style: none;          
                 a {
                 color: lightcyan;
                 text-decoration: none;
@@ -140,7 +122,7 @@ height: auto;
             } 
         }     
         .hamburger{
-            padding: 5% 2% 3% 0;
+            padding: 5% 3% 3% 0;
             display: none;
             cursor: pointer;
             text-align: right;
@@ -171,7 +153,7 @@ height: auto;
                 }
                 .active .bar:nth-child(3){
                     transform: translateY(-8px) rotate(-45deg);
-                    }
+                }
                 
             }                              
             .bar{
@@ -188,14 +170,13 @@ height: auto;
     }   
                     
 }      
-
+/*
 .content{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
     line-height: 1.5em;
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -210,6 +191,10 @@ height: auto;
             display: flex;
             justify-content: center;
             width: 83%;
+            @media @phone {
+                margin-top: 5%;
+                
+            }
         }
     }
         
