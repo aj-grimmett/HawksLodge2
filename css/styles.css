@@ -90,6 +90,12 @@ body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
   background-color: #FFEBCD;
 }
+
+
+
+
+
+
 header h1 {
   color: #000000;
   text-align: center;
@@ -121,7 +127,7 @@ header nav {
     justify-content: right;
   }
 }
-header nav .nav-menu {
+.nav-menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -135,103 +141,105 @@ header nav .nav-menu {
   transition: color 0.5s;
 }
 @media ( max-width: 600px ) {
-  header nav .nav-menu {
+  .nav-menu{
     position: fixed;
     left: -100%;
     top: 70px;
     gap: 0;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #262626;
-    padding-bottom: 5%;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
-  header nav .nav-menu .active {
+
+  
+  .nav-menu.active{
     left: 0;
   }
 }
 @media ( max-width: 780px) {
-  header nav .nav-menu {
+  .nav-menu{
     position: fixed;
     left: -100%;
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: black;
+    background-color: #262626;
     width: 100%;
     text-align: center;
     transition: 0.3s;
   }
-  header nav .nav-menu .active {
+  .nav-menu.active{
     left: 0;
   }
 }
-header nav .nav-menu li {
+.nav-menu li {
   list-style: none;
 }
-header nav .nav-menu li a {
+.nav-menu li a {
   color: lightcyan;
   text-decoration: none;
   transition: color 0.5s;
 }
-header nav .nav-menu li :hover {
+.nav-menu li :hover {
   border-bottom: 2px solid crimson;
 }
-header nav .nav-menu li a:hover {
+ .nav-menu li a:hover {
   color: red;
 }
-header nav .nav-menu .nav-wrapper-active-link a {
+@media (max-width: 600px){
+  .nav-menu .nav-link-wrapper{
+    margin: 1.5px 0;
+  }
+}
+.nav-menu .nav-wrapper-active-link a {
   color: #f30635;
 }
-header nav .hamburger {
+.hamburger {
   padding: 5% 3% 3% 0;
   display: none;
   cursor: pointer;
   text-align: right;
 }
 @media ( max-width: 600px ) {
-  header nav .hamburger {
+  .hamburger{
     display: block;
-    justify-content: right;
-    margin-top: 3%;
   }
-  header nav .hamburger .active .bar:nth-child(2) {
+
+  .hamburger.active .bar:nth-child(2){
     opacity: 0;
   }
-  header nav .hamburger .active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
   }
-  header nav .hamburger .active .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
 }
 @media ( max-width: 780px) {
-  header nav .hamburger {
+  .hamburger{
     display: block;
-    justify-content: right;
-    align-items: flex-end;
-    padding: 3% 2% 6% 0;
   }
-  header nav .hamburger .active .bar:nth-child(2) {
+
+  .hamburger.active .bar:nth-child(2){
     opacity: 0;
   }
-  header nav .hamburger .active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
   }
-  header nav .hamburger .active .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-header nav .hamburger .bar {
+.bar {
   display: block;
-  width: 26px;
-  height: 4px;
+  width: 25px;
+  height: 3px;
   margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: whitesmoke;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: azure;
 }
 .content {
   box-sizing: border-box;
@@ -260,6 +268,12 @@ header nav .hamburger .bar {
   .content .info-1 h2 {
     margin-top: 5%;
   }
+}
+@media (max-width: 780px ) {
+  .content .info-1 h2 {
+    margin-top: 6%;
+  }
+  
 }
 .content h2 {
   text-align: center;

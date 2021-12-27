@@ -24,6 +24,7 @@ body{
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
  background-color: #FFEBCD;
 }
+
 header{
     
             
@@ -55,121 +56,123 @@ header{
             justify-content: right;
             
         }
-        .nav-menu{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 1.2rem;
-            font-weight: 950;
-            width: 100%;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.5s;
-            color: lightcyan;
-            text-decoration: none;
-            transition: color 0.5s;
-            
-
-            @media @phone {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                gap: 0;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: #262626;
-                padding-bottom: 5%;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                .active{
-                    left: 0;
-                }
-            } 
-            @media @tablet {
-                position: fixed;
-                left: -100%;
-                top: 70px;
-                gap: 0;
-                flex-direction: column;
-                background-color: black;
-                width: 100%;
-                text-align: center;
-                transition: 0.3s;
-                    .active{
-                        left: 0;
-                    }
-                
-            }
-            li{    
-                list-style: none;          
-                a {
-                color: lightcyan;
-                text-decoration: none;
-                transition: color 0.5s;
-                }
-                
-                :hover { 
-                border-bottom: 2px solid crimson;
-                }
-                
-                a:hover {
-                color: red;
-                } 
-            }
-            .nav-wrapper-active-link a{
-            color: rgb(243, 6, 53);
-            } 
-        }     
-        .hamburger{
-            padding: 5% 3% 3% 0;
-            display: none;
-            cursor: pointer;
-            text-align: right;
-            @media @phone{
-                display: block;
-                justify-content: right;
-                margin-top: 3%;
-                .active .bar:nth-child(2){
-                    opacity: 0;
-                }
-                .active .bar:nth-child(1){
-                    transform: translateY(8px) rotate(45deg);
-                }
-                .active .bar:nth-child(3){
-                    transform: translateY(-8px) rotate(-45deg);
-                }
-            }     
-            @media @tablet {
-                display: block;
-                justify-content: right;
-                align-items: flex-end;
-                padding: 3% 2% 6% 0;
-                .active .bar:nth-child(2){
-                    opacity: 0;
-                }
-                .active .bar:nth-child(1){
-                    transform: translateY(8px) rotate(45deg);
-                }
-                .active .bar:nth-child(3){
-                    transform: translateY(-8px) rotate(-45deg);
-                }
-                
-            }                              
-            .bar{
-                display: block;
-                width: 26px;
-                height: 4px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background-color: whitesmoke;
-                
-                
-            }
-        }
+        
+        
     }   
                     
 }      
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 950;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+    color: lightcyan;
+    text-decoration: none;
+    transition: color 0.5s;
+    
+
+    @media @phone {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        .active{
+            left: 0;
+        }
+    } 
+    @media @tablet {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        .active{
+            left: 0;
+        }
+        
+    }
+    li{    
+        list-style: none;  
+        @media @phone {
+            margin: 16px 0;
+            
+        }        
+        a {
+        color: lightcyan;
+        text-decoration: none;
+        transition: color 0.5s;
+        }
+        
+        :hover { 
+        border-bottom: 2px solid crimson;
+        }
+        
+        a:hover {
+        color: red;
+        } 
+    }
+    .nav-wrapper-active-link a{
+    color: rgb(243, 6, 53);
+    } 
+}     
+.hamburger{
+    display: none;
+    cursor: pointer;
+    @media @phone{
+        display: block;
+        .active .bar:nth-child(2){
+        opacity: 0;
+        }
+        .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        }
+        .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        }
+    
+    
+
+  
+    }     
+    @media @tablet {
+        
+        display: block;
+        
+        .active .bar:nth-child(2){
+          opacity: 0;
+        }
+        .active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+        }
+        .active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+        }
+        
+    }                              
+    
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: black;
+  }
 /*
 .content{
     box-sizing: border-box;
@@ -195,6 +198,8 @@ header{
                 margin-top: 5%;
                 
             }
+            @media @tablet {
+                margin-top 6%;
         }
     }
         
