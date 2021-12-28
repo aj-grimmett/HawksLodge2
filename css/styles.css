@@ -791,26 +791,40 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-top: 4%;
-  width: 100%;
+.ct{
+  background-color: darkseagreen;
 }
-.title h2 {
-  width: 20%;
+.ct h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-top: 3%;
+}
+@media (max-width:600px) {
+  .ct h2{
+    font-size: 2.1rem;
+    width: 90%;
+    text-align: center;
+  }
+   
 }
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: darkseagreen;
   line-height: 2.3rem;
   padding-top: 2%;
   width: 100%;
-  border-bottom: dashed 0.3rem;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+   
 }
 .contact .text {
   display: flex;
@@ -822,6 +836,13 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 40%;
   padding-top: 3%;
   padding-left: 5%;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact .text{
+    flex-wrap: wrap;
+    width: 80%;
+  }
+   
 }
 .contact .text ul {
   justify-content: space-around;
@@ -874,7 +895,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: red;
 }
 .contact .text #google #map a {
-  color: #23b62a;
+  color: red;
   font-size: 1.6rem;
   padding-top: 5%;
   margin-top: 8%;
@@ -883,10 +904,34 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
 .contact .text #google #map a:hover {
   color: #f30635;
 }
-.contact .text #google #text {
+.text #google #text {
   color: azure;
   font-weight: 800;
   font-size: 0.8rem;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .emblems{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  #update{
+    justify-content: left;
+    width: 50%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  .emblems #google{
+    justify-content: right;
+    width: 50%;
+  }
+   
 }
 .contact .email {
   display: flex;
@@ -894,6 +939,44 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   align-items: center;
   font-size: 1.3rem;
   line-height: 2.8rem;
-  margin-bottom: 15%;
+  margin-bottom: 30%;
   width: 50%;
+}
+@media (min-width:800px) and (max-width:950px) {
+  .contact .email form{
+    margin-bottom: 17%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact .email{
+    margin-bottom: 4%;
+  }
+   
+}
+/* pictures*/
+.pics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+  list-style: none;
+}
+
+.pics ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+  
+}
+.pics ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
 }
