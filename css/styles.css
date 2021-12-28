@@ -257,6 +257,12 @@ header nav {
   line-height: 1.7rem;
   width: 90%;
 }
+@media (max-width:600px) {
+  .content .info-1 {
+    font-weight: 450;
+  }
+  
+}
 .content .info-1 h2 {
   display: flex;
   justify-content: center;
@@ -318,14 +324,22 @@ header nav {
   padding-top: 5%;
   margin-top: 8%;
   line-height: 2.2rem;
+  font-weight: 500;
 }
 .content .dirc #map a:hover {
   color: #f30635;
 }
 .content .dirc #text {
   color: azure;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 0.8rem;
+}
+@media (max-width:600px) {
+  .content .dirc #text {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
 }
 footer {
   display: flex;
@@ -357,7 +371,7 @@ footer .info #left p {
 }
 @media (max-width:600px) {
   footer .info #left p {
-    padding-left: 5%;
+    padding-left: 7%;
   }
   
 }
@@ -460,6 +474,7 @@ footer #fnav .nav-wrapper .nav-link-wrapper a:hover {
 footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: #f30635;
 }
+/*about */
 #bgi {
   background-image: url('/images/mountain-1.jpg');
 }
@@ -592,6 +607,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin: 2%;
   width: 70%;
 }
+/* cabins */
 .cabins {
   display: flex;
   justify-content: center;
@@ -629,7 +645,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
    
 }
-@media (min-width:601px) and (max-width:780px) {
+@media (min-width:601px) and (max-width:880px) {
   .cabins #cabin-2 p{
     margin-bottom: 50%;
   }
@@ -651,11 +667,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
+@media (max-width:780px) {
+  
+}
 .policies .extra {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 51%;
+  width: 48%;
 }
 @media (max-width:600px) {
   .policies .extra{
@@ -979,4 +998,15 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   align-items: center;
   flex-wrap: wrap;
   padding: 3%;
+}
+.pics ul li img:hover{
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
 }
