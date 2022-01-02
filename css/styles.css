@@ -86,15 +86,18 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html{
+  
+  
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
 body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
   background-color: #FFEBCD;
 }
-
-
-
-
-
 
 header h1 {
   color: #000000;
@@ -615,6 +618,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 1.2rem;
   line-height: 1.6rem;
   padding: 2%;
+  width: 100%;
   background-color: honeydew;
 }
 @media (max-width:600px) {
@@ -624,6 +628,15 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
   
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 100%;
+  }
+  
+}
+
 .cabins #cabin-1 {
   width: 50%;
   margin-right: 3%;
@@ -634,18 +647,37 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
    
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-1{
+    width: 90%;
+  }
+}
 .cabins #cabin-2 {
   width: 50%;
   margin-bottom: 13%;
 }
 @media (max-width:600px) {
   .cabins #cabin-2{
-    width: 80%;
+    width: 90%;
     margin-bottom: -20px;
   }
    
 }
-@media (min-width:601px) and (max-width:880px) {
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-2{
+    width: 90%;
+    margin-bottom: -20px;
+  }
+  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-2 p{
+    width: 90%;
+    margin-bottom: -20px;
+  }
+  
+}
+@media (min-width:870px) and (max-width:880px) {
   .cabins #cabin-2 p{
     margin-bottom: 50%;
   }
@@ -667,7 +699,12 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
-@media (max-width:780px) {
+@media (min-width: 601px) and (max-width:870px) {
+  .policies{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -20px;
+  }
   
 }
 .policies .extra {
@@ -684,6 +721,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .extra{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
+}
 .policies .extra h2 {
   display: flex;
   justify-content: center;
@@ -694,9 +739,17 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
 }
 @media (max-width:600px) {
   .policies .extra h2{
-    padding: 5% 0 3% 0;
+    text-align: center;
+    padding-top: 5%;
   }
  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .extra h2{
+    text-align: center;
+    padding-top: 5%;
+  }
+  
 }
 .policies .extra ul {
   font-size: 1.1rem;
@@ -707,8 +760,9 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 47%;
+  width: 42%;
   margin-left: 2%;
+  padding-left: 2%;
   line-height: 2.2rem;
   font-size: 1.5rem;
   line-break: 1.2rem;
@@ -721,6 +775,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
     width: 80%;
   }
  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .supplies{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
 }
 .rates {
   display: flex;
@@ -738,6 +800,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .rates{
+    flex-wrap: wrap;
+    padding-top: 1%;
+    width: 100%;
+  }
+  
+}
 .rates .price {
   display: flex;
   flex-wrap: wrap;
@@ -754,6 +824,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
     width: 80%;
   }
  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .rates .price{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
 }
 .rates .price h2 {
   font-size: 1.5rem;
@@ -779,6 +857,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .rates .shed{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 90%;
+  }
+  
+}
 .improv {
   display: flex;
   justify-content: flex-start;
@@ -796,6 +882,15 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
  
 }
+@media (min-width: 601px) and (max-width:870px) {
+  .improv{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+  
+}
 .improv p {
   width: 30%;
   font-size: 0.7rem;
@@ -809,6 +904,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
     width: 90%;
   }
  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .improv p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
 }
 .ct{
   background-color: darkseagreen;
@@ -826,6 +929,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
     text-align: center;
   }
    
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .ct h2{
+    font-size: 2.1rem;
+    width: 90%;
+    text-align: center;
+  }
+  
 }
 .contact {
   display: flex;
