@@ -86,15 +86,18 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+html{
+  
+  
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
 body {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d5cea6+0,c9c190+13,b7ad70+100 */
   background-color: #FFEBCD;
 }
-
-
-
-
-
 
 header h1 {
   color: #000000;
@@ -152,8 +155,6 @@ header nav {
     text-align: center;
     transition: 0.3s;
   }
-
-  
   .nav-menu.active{
     left: 0;
   }
@@ -259,6 +260,12 @@ header nav {
   line-height: 1.7rem;
   width: 90%;
 }
+@media (max-width:600px) {
+  .content .info-1 {
+    font-weight: 450;
+  }
+  
+}
 .content .info-1 h2 {
   display: flex;
   justify-content: center;
@@ -320,14 +327,22 @@ header nav {
   padding-top: 5%;
   margin-top: 8%;
   line-height: 2.2rem;
+  font-weight: 500;
 }
 .content .dirc #map a:hover {
   color: #f30635;
 }
 .content .dirc #text {
   color: azure;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 0.8rem;
+}
+@media (max-width:600px) {
+  .content .dirc #text {
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+  
 }
 footer {
   display: flex;
@@ -356,6 +371,12 @@ footer .info #left {
 }
 footer .info #left p {
   text-align: left;
+}
+@media (max-width:600px) {
+  footer .info #left p {
+    padding-left: 7%;
+  }
+  
 }
 footer .info #right {
   flex-wrap: wrap;
@@ -422,6 +443,13 @@ footer #fnav {
     display: none;
   }
 }
+
+@media (max-width: 780px) {
+  footer #fnav{
+    display: none;
+  }
+  
+}
 footer #fnav .nav-wrapper {
   font-size: 1.2rem;
   font-weight: 800;
@@ -449,6 +477,7 @@ footer #fnav .nav-wrapper .nav-link-wrapper a:hover {
 footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: #f30635;
 }
+/*about */
 #bgi {
   background-image: url('/images/mountain-1.jpg');
 }
@@ -486,12 +515,28 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   background-color: floralwhite;
   padding: 1%;
 }
+@media (max-width:600px) {
+  .review{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+}
 .review h2 {
   font-weight: 600;
 }
 .review .Face {
   width: 40%;
   margin: 3%;
+}
+@media (max-width:600px) {
+  .review .Face{
+    width: 90%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  
 }
 .review .Face span {
   margin: 2%;
@@ -517,6 +562,20 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin-left: 2%;
   margin-bottom: 11%;
 }
+@media (max-width:600px) {
+  .review .description{
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+}
+@media (min-width:601px) and (max-width:780px) {
+  .review .description{
+    margin-bottom: 50%;
+  }
+   
+}
 .help {
   display: flex;
   flex-wrap: wrap;
@@ -526,6 +585,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 100%;
   line-height: 1.8rem;
   background-color: floralwhite;
+}
+@media (max-width:600px) {
+  .help{
+    width: 100%;
+    text-align: center;
+    
+  }
+  
 }
 .help p {
   width: 90%;
@@ -543,6 +610,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin: 2%;
   width: 70%;
 }
+/* cabins */
 .cabins {
   display: flex;
   justify-content: center;
@@ -550,15 +618,70 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 1.2rem;
   line-height: 1.6rem;
   padding: 2%;
+  width: 100%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .cabins{
+    flex-wrap: wrap;
+    padding-top: 3%;
+  }
+  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 100%;
+  }
+  
+}
+
 .cabins #cabin-1 {
   width: 50%;
   margin-right: 3%;
 }
+@media (max-width:600px) {
+  .cabins #cabin-1{
+    width: 90%;
+  }
+   
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-1{
+    width: 90%;
+  }
+}
 .cabins #cabin-2 {
   width: 50%;
   margin-bottom: 13%;
+}
+@media (max-width:600px) {
+  .cabins #cabin-2{
+    width: 90%;
+    margin-bottom: -20px;
+  }
+   
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-2{
+    width: 90%;
+    margin-bottom: -20px;
+  }
+  
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .cabins #cabin-2 p{
+    width: 90%;
+    margin-bottom: -20px;
+  }
+  
+}
+@media (min-width:870px) and (max-width:880px) {
+  .cabins #cabin-2 p{
+    margin-bottom: 50%;
+  }
+   
 }
 .policies {
   padding: 2%;
@@ -568,11 +691,43 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 100%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .policies{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -20px;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: -20px;
+  }
+  
+}
 .policies .extra {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 51%;
+  width: 48%;
+}
+@media (max-width:600px) {
+  .policies .extra{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .extra{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
 }
 .policies .extra h2 {
   display: flex;
@@ -581,6 +736,20 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 1.8rem;
   font-weight: bolder;
   margin-bottom: 1%;
+}
+@media (max-width:600px) {
+  .policies .extra h2{
+    text-align: center;
+    padding-top: 5%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .extra h2{
+    text-align: center;
+    padding-top: 5%;
+  }
+  
 }
 .policies .extra ul {
   font-size: 1.1rem;
@@ -591,12 +760,29 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 47%;
+  width: 42%;
   margin-left: 2%;
+  padding-left: 2%;
   line-height: 2.2rem;
   font-size: 1.5rem;
   line-break: 1.2rem;
   font-weight: bold;
+}
+@media (max-width:600px) {
+  .policies .supplies{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .policies .supplies{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
 }
 .rates {
   display: flex;
@@ -606,6 +792,22 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   line-height: 1.8rem;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .rates{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 100%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .rates{
+    flex-wrap: wrap;
+    padding-top: 1%;
+    width: 100%;
+  }
+  
+}
 .rates .price {
   display: flex;
   flex-wrap: wrap;
@@ -614,6 +816,22 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-weight: 700;
   width: 55%;
   margin: 2%;
+}
+@media (max-width:600px) {
+  .rates .price{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .rates .price{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 80%;
+  }
+  
 }
 .rates .price h2 {
   font-size: 1.5rem;
@@ -631,6 +849,22 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin: 2%;
   margin-bottom: 9%;
 }
+@media (max-width:600px) {
+  .rates .shed{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 90%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .rates .shed{
+    flex-wrap: wrap;
+    padding-top: 3%;
+    width: 90%;
+  }
+  
+}
 .improv {
   display: flex;
   justify-content: flex-start;
@@ -639,32 +873,88 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   padding: 1%;
   background-color: honeydew;
 }
+@media (max-width:600px) {
+  .improv{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+ 
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .improv{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    width: 100%;
+  }
+  
+}
 .improv p {
   width: 30%;
   font-size: 0.7rem;
   font-weight: bold;
   line-height: 1.4rem;
 }
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding-top: 4%;
-  width: 100%;
+@media (max-width:600px) {
+  .improv p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+ 
 }
-.title h2 {
-  width: 20%;
+@media (min-width: 601px) and (max-width:870px) {
+  .improv p{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
+  
+}
+.ct{
+  background-color: darkseagreen;
+}
+.ct h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-top: 3%;
+}
+@media (max-width:600px) {
+  .ct h2{
+    font-size: 2.1rem;
+    width: 90%;
+    text-align: center;
+  }
+   
+}
+@media (min-width: 601px) and (max-width:870px) {
+  .ct h2{
+    font-size: 2.1rem;
+    width: 90%;
+    text-align: center;
+  }
+  
 }
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: darkseagreen;
   line-height: 2.3rem;
   padding-top: 2%;
   width: 100%;
-  border-bottom: dashed 0.3rem;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+   
 }
 .contact .text {
   display: flex;
@@ -676,6 +966,13 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   width: 40%;
   padding-top: 3%;
   padding-left: 5%;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact .text{
+    flex-wrap: wrap;
+    width: 80%;
+  }
+   
 }
 .contact .text ul {
   justify-content: space-around;
@@ -728,7 +1025,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   color: red;
 }
 .contact .text #google #map a {
-  color: #23b62a;
+  color: red;
   font-size: 1.6rem;
   padding-top: 5%;
   margin-top: 8%;
@@ -737,10 +1034,34 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
 .contact .text #google #map a:hover {
   color: #f30635;
 }
-.contact .text #google #text {
+.text #google #text {
   color: azure;
   font-weight: 800;
   font-size: 0.8rem;
+}
+@media (min-width:300px) and (max-width:799px) {
+  .emblems{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  #update{
+    justify-content: left;
+    width: 50%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  .emblems #google{
+    justify-content: right;
+    width: 50%;
+  }
+   
 }
 .contact .email {
   display: flex;
@@ -748,6 +1069,55 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   align-items: center;
   font-size: 1.3rem;
   line-height: 2.8rem;
-  margin-bottom: 15%;
+  margin-bottom: 30%;
   width: 50%;
+}
+@media (min-width:800px) and (max-width:950px) {
+  .contact .email form{
+    margin-bottom: 17%;
+  }
+   
+}
+@media (min-width:300px) and (max-width:799px) {
+  .contact .email{
+    margin-bottom: 4%;
+  }
+   
+}
+/* pictures*/
+.pics{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+  list-style: none;
+}
+
+.pics ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+  
+}
+.pics ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.pics ul li img:hover{
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
 }
