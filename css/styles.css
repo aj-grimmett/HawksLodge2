@@ -415,6 +415,7 @@ footer .info #right ul li a {
   flex-wrap: wrap;
   margin-top: 3%;
   text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 footer .info #right ul li a:hover {
@@ -964,13 +965,14 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 1.3rem;
   font-weight: 700;
   width: 40%;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-left: 5%;
 }
 @media (min-width:300px) and (max-width:799px) {
   .contact .text{
     flex-wrap: wrap;
     width: 80%;
+    padding-top: 0;
   }
    
 }
@@ -979,12 +981,15 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   align-items: flex-end;
   flex-wrap: wrap;
   margin-top: 2%;
+  padding-top: 3%;
+  text-align: center;
 }
 .contact .text ul li {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   flex-wrap: wrap;
+  text-align: center;
   margin-top: 2%;
   list-style: none;
   padding-bottom: 1%;
@@ -1001,6 +1006,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   margin-top: 3%;
   text-decoration: none;
   color: black;
+  text-decoration: underline;
 }
 .contact .text ul li a:hover {
   color: red;
@@ -1069,7 +1075,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   align-items: center;
   font-size: 1.3rem;
   line-height: 2.8rem;
-  margin-bottom: 30%;
+  margin-bottom: 23%;
   width: 50%;
 }
 @media (min-width:800px) and (max-width:950px) {
