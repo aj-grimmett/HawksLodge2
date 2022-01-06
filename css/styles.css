@@ -600,7 +600,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   }
   
 }
-@media (min-width:782px){
+@media (min-width:782px)and (max-width:905px){
   .review .description{
     padding-bottom: 10%;
   }
