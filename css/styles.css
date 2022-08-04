@@ -952,13 +952,15 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
   font-size: 2.5rem;
   font-weight: 800;
   padding-top: 3%;
-  padding-left: 10%;
+  padding-left: 4%;
 }
 @media (max-width:600px) {
   .ct h2{
     font-size: 2.1rem;
     width: 90%;
     text-align: center;
+    padding-left: 6%;
+    padding-bottom: 3%;
   }
    
 }
@@ -967,6 +969,7 @@ footer #fnav .nav-wrapper .nav-wrapper-active-link a {
     font-size: 2.1rem;
     width: 90%;
     text-align: center;
+    padding-left: 9%;
   }
   
 }

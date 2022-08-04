@@ -1,20 +1,26 @@
 <?php 
   if(isset($_POST['submit'])){
-    $to = "hawksriversidelodge@yahoo.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . "wrote the following " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ){
+     
+      $to = "ajgrimmett23@gmail.com"; // this is your Email address
+      $from = $_POST['email']; // this is the sender's Email address
+      $first_name = $_POST['first_name'];
+      $last_name = $_POST['last_name'];
+      $subject = "Form submission";
+      $subject2 = "Copy of your form submission";
+      $message = $first_name . "wrote the following " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+      $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+      $headers = "From:" . $from;
+      $headers2 = "From:" . $to;
+      mail($to,$subject,$message,$headers);
+      mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+      // You can also use header('Location: thank_you.php'); to redirect to another page.
+       $message_sent = true;
+
+
     }
+    
+  }
 ?>
 
 
@@ -89,7 +95,14 @@
           </div>  
         </div>
         <div class="email"> 
-          <form action="http://www.hawksriversidelodge.com/handler.xxx" method="post">
+          <?php
+           if($message_sent):
+           echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+          ?>
+          <?php
+          else:
+          ?>  
+          <form action="Contact.php" method="post">
             *First Name: <br><input type="text" name="first_name"><br>
             *Last Name: <br><input type="text" name="last_name"><br>
             *Mobile Phone:<br><input type="text" name="phone number"><br>
@@ -145,5 +158,8 @@
         
     </section>  
     <script src="script.js"></script>
+    <?php
+    endif;
+    ?>
   </body>
 </html>
