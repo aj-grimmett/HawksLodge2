@@ -103,12 +103,12 @@
           else:
           ?>  
           <form action="Contact.php" method="post">
-            *First Name: <br><input type="text" name="first_name"><br>
-            *Last Name: <br><input type="text" name="last_name"><br>
-            *Mobile Phone:<br><input type="text" name="phone number"><br>
-            *Email:<br><input type="text" name="email"><br>
-            Comments:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-            Company:<br><input type="text" name="Company"><br>
+           <label>*First Name:<br><input type="text" name="first_name"required></label><br>
+           <label> *Last Name:<br><input type="text" name="last_name"required></label><br>
+            <label>*Mobile Phone:<br><input type="text" name="phone number"required></label><br>
+            <label>*Email:<br><input type="text" name="email"required></label><br>
+            <label>Comments:<br><textarea rows="5" name="message" cols="30"></textarea></label><br>
+           <label>Company:<br><input type="text" name="Company"></label><br>
             <input type="submit" name="submit" value="Submit">
           </form>
         </div>
